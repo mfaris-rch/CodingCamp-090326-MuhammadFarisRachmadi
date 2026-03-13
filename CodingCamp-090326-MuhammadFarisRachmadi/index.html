@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Produktivitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Greeting Section -->
+        <section class="greeting">
+            <h1 id="greeting-text">Selamat Pagi</h1>
+            <p id="current-time">12:00:00</p>
+            <p id="current-date">Senin, 1 Januari 2024</p>
+        </section>
+
+        <!-- Focus Timer Section -->
+        <section class="timer">
+            <h2>Timer Fokus</h2>
+            <div id="timer-display">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn">Mulai</button>
+                <button id="stop-btn">Berhenti</button>
+                <button id="reset-btn">Atur Ulang</button>
+            </div>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section class="todo">
+            <h2>Daftar Tugas</h2>
+            <div class="todo-input">
+                <input type="text" id="task-input" placeholder="Tambahkan tugas baru...">
+                <button id="add-task-btn">Tambah</button>
+            </div>
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="quick-links">
+            <h2>Tautan Cepat</h2>
+            <div class="link-input">
+                <input type="text" id="link-name" placeholder="Nama tautan">
+                <input type="url" id="link-url" placeholder="https://contoh.com">
+                <button id="add-link-btn">Tambah Tautan</button>
+            </div>
+            <div id="links-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
